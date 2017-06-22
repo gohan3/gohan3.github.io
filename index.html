@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href = "assets/css/bootstrap-responsive.css" rel = "stylesheet">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Garage Store</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <div class="container">
+    <!--Верхняя панель-меню -->
+    <nav class="navbar navbar-default"> <!-- он понимает, что создается меню - ШАПКА -->
+ 	 		<div class="container-fluid"> <!-- нав приминает ширину fluid-контейнера-->
+ 	 				<div class="navbar-header" style="width:100px; height:100px;"> <!-- НЕ понимает, что меню, расценивает как ЛОГО сайта-->
+ 	 					<a href="index.html" class="navbar-brand"> <img src="pics/garageLogo3.gif" style=""></a> <!-- гараге слово со стилями, бренда так сказать -->
+ 	 				</div>
+ 					<!--создание самого меню-->
+ 					<div>
+ 						<ul class="nav navbar-nav"> <!--обычно, меню содержится в UL'е по соглашению, стандарт. Нав навбар дает понять бутстрапу. что тут будет именно меню, мы создаем навигацию. -->
+ 							<li class="active"> <a href="index.html"> Главная </a></li>
+ 							<li> <a href="products.html"> Ассортимент </a></li>
+ 							<li> <a href="howToBuy.html"> Оплата и доставка </a></li>
+ 							<li> <a href="aboutUs.html"> О нас </a></li>
+ 							<li> <a href="justTest.html"> Обратная связь </a></li>
+							<li> <p class = "text-primary" style = "padding: 5% 5% 5% 5%;text-align:center;">Самарская область, г.Тольятти. <br> <span class ="glyphicon glyphicon-earphone"></span>  8-800-555-35-35 </p> </li>
+ 						</ul>
+ 					</div>
+
+ 	 		</div>
+ 	 </nav>
+
+
+
+
+   <!-- Тут будет слайдер -->
+<div class="container-fluid">
+  <div id="carousel" class="carousel slide" style=" background-color:#FFFFFF; width:100%;">
+  <!-- индикаторы слайдов-->
+    <ol class="carousel-indicators">
+      <li class="active" data-target = "#carousel" data-slide-to = "0"> </li>
+      <li data-target = "#carousel" data-slide-to = "1"> </li>
+      <li data-target = "#carousel" data-slide-to = "2"> </li>
+    </ol>
+
+  <!-- слайды-->
+      <div class="carousel-inner">  <!-- тут пиздецовая настройка имг во весь ДИВ-->
+        <div class="item active" style="width:90%; height:auto; margin:auto; margin-top:2%;">
+          <img src="pics/bannerSALE2.png" alt="" style="width:100%; " > <!-- width делает картинку во весь ДИВ, а margin:auto центрирует внутри по центру-->
+          <div class="carousel.caption">
+          </div>
+        </div>
+
+      <div class="item" style="width:90%; height:auto; margin:auto; margin-top:2%;"> <img src="pics/bannerSALE3.gif" alt="" style="width:100%; " >
+        <div class="carousel.caption">
+        </div>
+      </div>
+
+      <div class="item" style="width:90%; height:auto; margin:auto; margin-top:2%;"> <img src="pics/bannerSale4.gif" alt="" style="width:100%; " >
+        <div class="carousel.caption">
+          <!--  <h3>3 слайд</h3>
+            <h4>Текст 3 слайда</h4> -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- управление Стрелками -->
+     <a href="#carousel" class="#left carousel-control" data-slide = "prev">
+      <span class="glyphicon glyphicon-chevron-left" ></span>
+   </a>
+
+    <a href="#carousel" class="#right carousel-control" data-slide = "next">
+      <span class="glyphicon glyphicon-chevron-right" style="margin-right:-570%;"></span> <!--Почему только в отрицательном?? -->
+   </a>
+</div>
+</div>
+    <!-- конец слайдера-->
+
+
+
+  <div class="row">
+
+    <!-- Тут блок с калькулятором-->
+    <div class="col-md-3 col-xs-5" style="padding:3% 3% 3% 3%; background-color: white; height:100%; margin-top:2%; text-align:center; border:0px ridge; border-color:white;"> <!-- class="col-lg-4 col-lg-pull-8" -->
+      <!--Ниже - первое выпадающее меню с шириной! -->
+
+		<div class = "col-xs-12 col-md-12" style = "display:inline-block; padding:4%;"> <!--Ширина -->
+			<div class="dropdown" style = "text-align:center;">  <!--!!НИЖЕ!! Классы кнопки - от бутстрапа. Спан 'caret'  делает в "Ширине" декоративн.стрелочку-->
+				<button class="btn btn-primary dropdown-toggle" data-toggle = "dropdown" style=""> Ширина
+						<span class="caret"> </span>
+				</button>
+			  <ul class="dropdown-menu">
+				<li><a href = "#">155</a></li>
+				<li><a href = "#">165</a></li>
+				<li><a href = "#">175</a></li>
+				<li><a href = "#">185</a></li>
+				<li><a href = "#">195</a></li>
+				<li><a href = "#">205</a></li>
+				<li><a href = "#">215</a></li>
+				<li><a href = "#">225</a></li>
+				<li><a href = "#">235</a></li>
+				<li><a href = "#">245</a></li>
+				<li><a href = "#">255</a></li>
+				<li><a href = "#">265</a></li>
+				<li><a href = "#">275</a></li>
+				<li><a href = "#">285</a></li>
+				<li><a href = "#">295</a></li>
+				<li><a href = "#">305</a></li>
+				<li><a href = "#">315</a></li>
+			  </ul>
+
+		</div>
+	  </div>
+
+		<div class = "col-xs-12 col-md-12" style = "display:inline-block; padding:4%;"> <!--Высота -->
+			<div class="dropdown" style = "text-align:center;">  <!-- Почему кнопку с высотой удается выравнить по отношению к ШИРИНЕ только через  отрицательный margin-top -->
+				<button class="btn btn-primary dropdown-toggle" data-toggle = "dropdown" style=""> Высота
+				<span class="caret"> </span> </button>
+			<ul class="dropdown-menu">
+				<li><a href = "#">35</a></li>
+				<li><a href = "#">40</a></li>
+				<li><a href = "#">45</a></li>
+				<li><a href = "#">50</a></li>
+				<li><a href = "#">55</a></li>
+				<li><a href = "#">60</a></li>
+				<li><a href = "#">65</a></li>
+				<li><a href = "#">70</a></li>
+				<li><a href = "#">75</a></li>
+				<li><a href = "#">80</a></li>
+				<li><a href = "#">85</a></li>
+			</ul>
+
+			</div>
+		</div>
+
+		<div class = "col-xs-12 col-md-12" style = "display:inline-block; padding:4%;"> <!--Радиус-->
+			<div class="dropdown" style = "text-align:center;">
+				<button class="btn btn-primary dropdown-toggle" data-toggle = "dropdown" style=""> Радиус
+				<span class="caret"> </span> </button>
+			<ul class="dropdown-menu">
+				<li><a href = "#">R-12</a></li>
+				<li><a href = "#">R-13</a></li>
+				<li><a href = "#">R-14</a></li>
+				<li><a href = "#">R-15</a></li>
+				<li><a href = "#">R-16</a></li>
+				<li><a href = "#">R-17</a></li>
+				<li><a href = "#">R-18</a></li>
+				<li><a href = "#">R-19</a></li>
+				<li><a href = "#">R-20</a></li>
+				<li><a href = "#">R-21</a></li>
+				<li><a href = "#">R-22</a></li>
+			</ul>
+
+		</div>
+		</div>
+
+		<div class = "col-xs-12 col-md-12" style = "display:inline-block; padding:4%;"> <!--Бренд-->
+
+			<div class="dropdown" style = "text-align:center;">
+				<button class="btn btn-primary dropdown-toggle" data-toggle = "dropdown" style=""> Бренд
+				<span class="caret"> </span> </button>
+			  <ul class="dropdown-menu">
+				<li><a href = "#">Continental</a></li>
+				<li><a href = "#">Matador</a></li>
+				<li><a href = "#">Gislaved</a></li>
+				<li><a href = "#">Yokohama</a></li>
+				<li><a href = "#">GoodYear</a></li>
+				<li><a href = "#">Sava</a></li>
+				<li><a href = "#">RoadStone</a></li>
+				<li><a href = "#">Pirelli</a></li>
+				<li><a href = "#">Dunlop</a></li>
+				<li><a href = "#">KingStar</a></li>
+				<li><a href = "#">Kumho</a></li>
+			  </ul>
+
+			</div>
+		</div>
+
+
+
+		<div class = "col-xs-12 col-md-12" style = "display:inline-block; text-align:center;"> <!--Зимние-->
+			<div class="checkbox" >
+			   <label>
+					<input type="checkbox" value="check1">
+						Зимние
+					</label>
+			</div>
+		</div>
+
+		<div class = "col-xs-12 col-md-12" style = "display:inline-block; text-align:center;"> <!--Летние-->
+			<div class="checkbox" >
+				<label>
+					<input type="checkbox" value="check1">
+						Летние
+				</label>
+			</div>
+		</div>
+
+		<div class = "col-xs-12 col-md-12" style = "display:inline-block; text-align:center; margin-bottom:3%;"> <!--Подобрать-->
+			<div class="dropdown">
+				<button class="btn btn-success dropdown-toggle" data-toggle = "dropdown" style=""> Подобрать </button>
+
+			</div>
+		</div>
+
+
+
+    </div>
+    <!--Конец калькулятора -->
+
+
+
+
+
+    <!-- Тут блок с с самыми ходовыми -->
+    <div class="col-md-9 col-xs-7" style="height:100%; margin-top:2%; text-align:center; background-color:#5382be; "> <!--class="col-lg-8 col-lg-push-4" -->
+		<div class = "row" style="align:center; padding: 5%;">
+
+
+		  <div class="container-fluid" style=" border:1px solid; border-color:white; background-size:contain; display:inline-block;">
+			     <img src = "pics/brands/hankook.png" style="max-width:100%; height:auto;">
+		  </div>
+
+		  <div class="container-fluid" style=" border:1px solid; border-color:white; background-size:contain; display:inline-block;">
+			     <img src = "pics/brands/michelin.png" style="max-width:100%; height:auto;">
+		  </div>
+
+		  <div class="container-fluid" style=" border:1px solid; border-color:white; background-size:contain; display:inline-block;">
+			     <img src = "pics/brands/contiLogo.png" style="max-width:100%; height:auto;">
+		  </div>
+
+		  <div class="container-fluid" style=" border:1px solid; border-color:white; background-size:contain; display:inline-block;">
+			     <img src = "pics/brands/goodYear.png" style="max-width:100%; height:auto;">
+		  </div>
+
+		  <div class="container-fluid" style=" border:1px solid; border-color:white; background-size:contain; display:inline-block;">
+			     <img src = "pics/brands/nokian.png" style="max-width:100%; height:auto;">
+		  </div>
+
+		  <a href="products.html"><div class="container-fluid" style=" border:1px solid; border-color:white; background-size:contain; display:inline-block;">
+			     <img src="pics/brands/etcLogo.gif" style="max-width:100%; height:auto;">
+			</div> </a>
+
+      <div class = "container-fluid">
+          <strong> <p class="text-primary" style="color:white; padding-top:5%;">Известные бренды.<br> Премиальное качество. <br> </p> </strong>
+      </div>
+
+
+	  </div>
+
+    </div>
+    <!-- Конец блока с с самыми ходовыми -->
+<div class= "clearfix visible-xs"> </div> <!-- Лечит размеры соседних блоков, что бы размер был адекватен друг к другу-->
+  </div>
+
+
+
+  <div class = "row" style="padding-top:0%;">
+  <!--Нижнее меню -->
+
+
+  <div class = "col-xs-12 col-md-12" style = "background-color:white; height:100%; margin-top:1%;">
+    <hr style="width:75% ; height:1px; border-color:#ccc;">
+      <div class = "col-xs-4 col-md-4" style = " text-align:center; padding: 1% 1% 1% 1%;">
+        <strong><small> <p class = "text-info">Мы в социальных сетях: </p></small></strong>
+          <img src = "pics/vkMini.png" >
+          <img src = "pics/facebookMini.png">
+          <img src = "pics/odnMini.png">
+      </div>
+
+
+
+    <div class = "col-xs-4 col-md-4" style = "; text-align:center; padding: 1% 1% 1% 1%;">
+      <strong><small> <p class = "text-info">Свяжитесь с нами по почте.</p></small></strong>
+      <img src = "pics/maill.png" >
+     <p class="text-info">garage.store@yandex.ru</p>
+    </div>
+
+
+    <div class = "col-xs-4 col-md-4" style = "float:right; padding: 1% 1% 1% 1%;">
+      <strong><small> <p class = "text-primary" style = "text-align:center; padding-left:5%;;">Самарская обл, </br>г.Тольятти. <br> <span class ="glyphicon glyphicon-earphone"></span>  8-800-555-35-35 </p> </small> </strong>
+    </div>
+
+  </div>
+  <!--Конец нижнего меню -->
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+	</div>
+  </body>
+</html>
